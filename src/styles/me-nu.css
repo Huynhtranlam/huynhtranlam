@@ -1,0 +1,32 @@
+.search__widge, 
+.sorting__widget select{
+    padding: 7px 50px;
+    border: 2px solid #fde4e4;
+    border-radius: 5px;
+    
+}
+
+.search__widge input:focus{
+  outline: none;
+ 
+}
+.input-group {
+  position: relative;
+}
+
+.search__widget.custom.input {
+  padding-left: 30px; /* Điều chỉnh khoảng cách từ bên trái */
+}
+
+
+
+
+  .custom-icon {
+    position: absolute;
+    right: 345px; /* Điều chỉnh vị trí biểu tượng tìm kiếm theo ý muốn */
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent; /* Đặt nền biểu tượng là trong suốt */
+    border: none;
+    cursor: pointer; /* Hiển thị con trỏ tay khi di chuột qua biểu tượng */
+  }

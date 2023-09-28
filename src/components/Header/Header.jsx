@@ -4,6 +4,7 @@ import { Container } from "reactstrap";
 import logo from "../../assets/images/logo.png";
 import { Link, NavLink } from "react-router-dom";
 
+import { UseSelector, useSelector } from "react-redux";
 import '../../styles/header.css'
 const nav__links = [
     {
@@ -37,7 +38,8 @@ const nav__links = [
 const Header = () => {
     
     const menuRef = useRef(null);
-    const headerRef = useRef(null)
+    const headerRef = useRef(null);
+    const totalQuanity = useSelector(state => state.cart.totalQuanity)
 
     const toggleMenu = () => menuRef.current.classList.toggle('show__thanhmenu');
 
@@ -89,7 +91,7 @@ const Header = () => {
                 <div className="nav__right d-flex align-items-center gap-5">
                     <span className="cart__icon">
                     <i class="ri-shopping-basket-line"></i>
-                        <span className="cart__badge">2</span>
+                        <span className="cart__badge">{totalQuanity}</span>
                     </span>
 
                     <span className="user">

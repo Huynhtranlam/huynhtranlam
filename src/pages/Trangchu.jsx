@@ -8,9 +8,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBurger } from '@fortawesome/free-solid-svg-icons';
 import { faMoneyBill } from '@fortawesome/free-solid-svg-icons';
 import '../styles/Trangchu.css';
-import image1 from '../assets/images/banner1.jpg';
-import image2 from '../assets/images/banner2.jpg';
-import image3 from '../assets/images/banner3.jpg';
+import image1 from '../assets/images/bannerdau1.png';
+import image2 from '../assets/images/banner22.png';
+import image3 from '../assets/images/Red Yellow Simple Creative Delicious Ramen Promotion Banner.png';
 import image4 from '../assets/images/banner5.jpg';
 import shipper from '../assets/images/shipper.png';
 import product_07 from '../assets/images/product_07.png';
@@ -67,7 +67,7 @@ const Trangchu = () => {
       <Helmet title="Trang chủ">
         
           <section>
-            <Carousel autoPlay={true} showArrows={false} showThumbs={false} interval={2000} infiniteLoop={true} className="custom-carousel">
+            <Carousel autoPlay={true} showArrows={false} showThumbs={false} interval={1000} infiniteLoop={true} className="custom-carousel">
               <div>
                 <img src={image1} alt="" />
               </div>
@@ -87,13 +87,13 @@ const Trangchu = () => {
           </div>
           <div className='about_content'>
             <h1>VỀ TUTI</h1>
-            <p>LOTTERIA Việt Nam thừa nhận và tôn trọng thông tin bí mật của những cá nhân đăng nhập vào trang web của LOTTERIA Việt Nam. 
-            Chính sách này bao gồm thông tin cá nhân mà LOTTERIA Việt Nam và bên nhượng quyền và đại diện các bên nhượng quyền của LOTTERIA Việt Nam 
-            muốn sử dụng, quản lý và bảo vệ thông tin cá nhân của khách khi đăng nhập hoặc đặt hàng qua trang web LOTTERIA Vietnam.
-            LOTTERIA VIETNAM có quyền xem xét lại chính sách bảo mật này theo thời gian khi thấy cần thiết, 
+            <p>TUTIFOOD  thừa nhận và tôn trọng thông tin bí mật của những cá nhân đăng nhập vào trang web của TUTIFOOD. 
+            Chính sách này bao gồm thông tin cá nhân mà TUTIFOOD và bên nhượng quyền và đại diện các bên nhượng quyền của TUTIFOOD 
+            muốn sử dụng, quản lý và bảo vệ thông tin cá nhân của khách khi đăng nhập hoặc đặt hàng qua trang web TUTIFOOD.
+            TUTIFOOD có quyền xem xét lại chính sách bảo mật này theo thời gian khi thấy cần thiết, 
             vì vậy hãy thường xuyên kiểm tra thông tin cập nhật. Chính sách bảo mật này sẽ áp dụng từ tháng 1 năm 2023 muốn sử dụng, 
-            quản lý và bảo vệ thông tin cá nhân của khách khi đăng nhập hoặc đặt hàng qua trang web LOTTERIA Vietnam.
-            quản lý và bảo vệ thông tin cá nhân của khách khi đăng nhập hoặc đặt hàng qua trang web LOTTERIA Vietnam...</p>
+            quản lý và bảo vệ thông tin cá nhân của khách khi đăng nhập hoặc đặt hàng qua trang web TUTIFOOD.
+            quản lý và bảo vệ thông tin cá nhân của khách khi đăng nhập hoặc đặt hàng qua trang web TUTIFOOD...</p>
             <Link to="/gioithieu">
            <button className='about_button'>Xem thêm</button>
            </Link>
