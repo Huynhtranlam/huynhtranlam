@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import '../styles/login.css';
+import { Link } from "react-router-dom";
 
 export const Register = (props) => {
   const [email, setEmail] = useState('');
@@ -13,17 +15,19 @@ export const Register = (props) => {
   return (
     <div className="App">
       <div className="auth-form-container">
-        <h2>Register</h2>
+        <h2>ĐĂNG KÝ</h2>
         <form className="register-form" onSubmit={handleSubmit}>
-          <label htmlFor="name">Full name</label>
+          <label htmlFor="name">Tên đầy đủ</label>
           <input value={name} name="name" onChange={(e) => setName(e.target.value)} id="name" placeholder="full Name" />
-          <label htmlFor="email">email</label>
+          <label htmlFor="email">Email</label>
           <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="youremail@gmail.com" id="email" name="email" />
-          <label htmlFor="password">password</label>
+          <label htmlFor="password">Password</label>
           <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="********" id="password" name="password" />
-          <button type="submit">Log In</button>
+          <button type="submit" className="custom-button" >ĐĂNG KÝ</button>
         </form>
-        <button className="link-btn" onClick={() => props.onFormSwitch('Login')}>Already have an account? Login here.</button>
+        <Link to="/login">
+          <section className="link-login">Đã có tài khoản? Đăng nhập tại đây.</section>
+        </Link>
       </div>
     </div>
   )
